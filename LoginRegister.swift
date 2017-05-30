@@ -9,7 +9,6 @@
 import UIKit
 import Firebase
 import FirebaseAuth
-import SwiftGifOrigin
 
 class ViewController: UIViewController {
     @IBOutlet weak var username: UITextField!
