@@ -15,6 +15,7 @@
 		629E396F22E86B55006FAA55 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 629E396D22E86B55006FAA55 /* LaunchScreen.storyboard */; };
 		629E397A22E86B55006FAA55 /* Firebase_CRUDTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 629E397922E86B55006FAA55 /* Firebase_CRUDTests.swift */; };
 		629E398522E86CEA006FAA55 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 629E398422E86CEA006FAA55 /* GoogleService-Info.plist */; };
+		62BCF70D22E8F3CE00B9E7F9 /* RegistrationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62BCF70C22E8F3CE00B9E7F9 /* RegistrationVC.swift */; };
 		7FD973960300E83225AC0BD5 /* Pods_Firebase_CRUDTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB5CD3926D9C063D64D7FA99 /* Pods_Firebase_CRUDTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +43,7 @@
 		629E397922E86B55006FAA55 /* Firebase_CRUDTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_CRUDTests.swift; sourceTree = "<group>"; };
 		629E397B22E86B55006FAA55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		629E398422E86CEA006FAA55 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		62BCF70C22E8F3CE00B9E7F9 /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		874C6BE405B1BAB1B7801F89 /* Pods-Firebase-CRUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-CRUD.release.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase-CRUD/Pods-Firebase-CRUD.release.xcconfig"; sourceTree = "<group>"; };
 		8A2EF722EDFDD3EF1F6ED687 /* Pods-Firebase-CRUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-CRUD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Firebase-CRUD/Pods-Firebase-CRUD.debug.xcconfig"; sourceTree = "<group>"; };
 		A6C3D182E72D403AAE7AF4B1 /* Pods_Firebase_CRUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_CRUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,6 +97,7 @@
 				629E396422E86B52006FAA55 /* AppDelegate.swift */,
 				629E396622E86B52006FAA55 /* ViewController.swift */,
 				629E396822E86B52006FAA55 /* Main.storyboard */,
+				62BCF70C22E8F3CE00B9E7F9 /* RegistrationVC.swift */,
 				629E396B22E86B55006FAA55 /* Assets.xcassets */,
 				629E396D22E86B55006FAA55 /* LaunchScreen.storyboard */,
 				629E397022E86B55006FAA55 /* Info.plist */,
@@ -351,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				629E396722E86B52006FAA55 /* ViewController.swift in Sources */,
+				62BCF70D22E8F3CE00B9E7F9 /* RegistrationVC.swift in Sources */,
 				629E396522E86B52006FAA55 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,7 +521,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RBE9527MBH;
 				INFOPLIST_FILE = "Firebase-CRUD/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Firebase-CRUD.Firebase-CRUD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -533,7 +540,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RBE9527MBH;
 				INFOPLIST_FILE = "Firebase-CRUD/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Firebase-CRUD.Firebase-CRUD";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -550,7 +560,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RBE9527MBH;
 				INFOPLIST_FILE = "Firebase-CRUDTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Firebase-CRUD.Firebase-CRUDTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
@@ -568,7 +582,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RBE9527MBH;
 				INFOPLIST_FILE = "Firebase-CRUDTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "Firebase-CRUD.Firebase-CRUDTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
