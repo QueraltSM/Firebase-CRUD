@@ -57,11 +57,40 @@
                     <connections>
                         <outlet property="email" destination="AMx-PQ-Uwy" id="c9z-TU-eBD"/>
                         <outlet property="password" destination="Ch1-0z-cc0" id="2IS-0I-WKF"/>
+                        <segue destination="Nlh-eq-fHx" kind="show" identifier="HomeVCSegue" id="ihb-ZY-P8X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="123.91304347826087"/>
+        </scene>
+        <!--HomeVC-->
+        <scene sceneID="DtA-u0-lF3">
+            <objects>
+                <viewController id="Nlh-eq-fHx" customClass="HomeVC" customModule="Firebase_CRUD" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wd2-bT-0AQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4dF-EI-kCP">
+                                <rect key="frame" x="100" y="425" width="217" height="126"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Delete account"/>
+                                <connections>
+                                    <action selector="deleteAccount:" destination="Nlh-eq-fHx" eventType="touchUpInside" id="myx-CQ-emi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.90588235289999997" green="0.34901960780000002" blue="0.1764705882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="YTR-7G-MB0"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="IndexVCSegue" id="HC5-Uf-Z8K"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fOu-04-lzp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1050.7246376811595" y="123.91304347826087"/>
         </scene>
         <!--RegistrationVC-->
         <scene sceneID="yYx-fQ-Fbp">

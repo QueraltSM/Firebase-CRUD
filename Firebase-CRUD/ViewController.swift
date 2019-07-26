@@ -16,6 +16,7 @@ class ViewController: UIViewController {
                 print("Error")
             } else {
                 print("User was logged")
+                self.performSegue(withIdentifier: "HomeVCSegue", sender: self)
             }
         }
     }
