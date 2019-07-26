@@ -50,6 +50,14 @@
                                     <segue destination="w9M-pn-xeL" kind="show" id="iGS-eq-oI1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALb-p1-jOX">
+                                <rect key="frame" x="133" y="286" width="119" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="I forget password"/>
+                                <connections>
+                                    <action selector="resetPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xp7-ZE-Qdc"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.30980392159999998" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

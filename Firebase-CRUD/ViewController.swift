@@ -21,5 +21,14 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func resetPassword(_ sender: Any) {
+        Auth.auth().sendPasswordReset(withEmail: email.text!) { error in
+            if error != nil {
+                print ("Error")
+            } else {
+                print("Email was send")
+            }
+        }
+    }
 }
-
